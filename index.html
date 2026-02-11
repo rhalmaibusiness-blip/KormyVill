@@ -1,0 +1,2580 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KormyVill – Professzionális Villanyszerelés | 20 Év Tapasztalat</title>
+    <meta name="description"
+        content="KormyVill – Professzionális villanyszerelés 20 év tapasztalattal. Lakossági villanyszerelés, hálózat kivitelezés, felülvizsgálat, villámvédelem. Minden folyamat egy kézben. Kérjen árajánlatot!">
+    <meta name="keywords"
+        content="villanyszerelés, villanyszerelő, elektromos hálózat, villamos felülvizsgálat, villámvédelem, villanyóra kiépítés, elektromos autótöltő, regisztrált villanyszerelő">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="KormyVill">
+    <link rel="canonical" href="https://kormyvill.hu">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="KormyVill – Professzionális Villanyszerelés">
+    <meta property="og:description" content="20 év tapasztalat – az első nap lendületével. Kérjen árajánlatot!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kormyvill.hu">
+    <meta property="og:locale" content="hu_HU">
+    <meta property="og:image" content="kormyvill-logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* ============================================
+           CSS CUSTOM PROPERTIES
+           ============================================ */
+        :root {
+            --color-bg-dark: #111111;
+            --color-bg-darker: #0a0a0a;
+            --color-bg-card: #1a1a1a;
+            --color-bg-section-alt: #151515;
+            --color-red: #E52228;
+            --color-red-hover: #c91c22;
+            --color-red-glow: rgba(229, 34, 40, 0.3);
+            --color-text-white: #ffffff;
+            --color-text-light: #cccccc;
+            --color-text-muted: #999999;
+            --color-text-dark: #111111;
+            --color-border: rgba(255, 255, 255, 0.1);
+            --font-heading: 'Anton', sans-serif;
+            --font-body: 'Montserrat', sans-serif;
+            --header-height: 80px;
+            --section-padding: 100px 0;
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ============================================
+           RESET & BASE
+           ============================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            color: var(--color-text-white);
+            background-color: var(--color-bg-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           HEADER / NAVIGATION
+           ============================================ */
+        #site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: transparent;
+            border-bottom: 1px solid transparent;
+            transition: background-color 0.4s ease, border-color 0.4s ease, backdrop-filter 0.4s ease;
+        }
+
+        #site-header.scrolled {
+            background-color: rgba(17, 17, 17, 0.75);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: var(--header-height);
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            flex-shrink: 0;
+            z-index: 1001;
+        }
+
+        .header-logo-img {
+            height: 70px;
+            width: auto;
+        }
+
+        /* Desktop Nav */
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-desktop a {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 4px 0;
+        }
+
+        .nav-desktop a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-red);
+            transition: width 0.3s ease;
+        }
+
+        .nav-desktop a:hover {
+            color: var(--color-text-white);
+        }
+
+        .nav-desktop a:hover::after {
+            width: 100%;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-shrink: 0;
+        }
+
+        .btn-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 28px;
+            background: var(--color-red);
+            color: var(--color-text-white);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-cta:hover {
+            background: var(--color-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px var(--color-red-glow);
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 2px;
+            background: var(--color-text-white);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Mobile Nav */
+        .nav-mobile {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(10, 10, 10, 0.97);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .nav-mobile.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .nav-mobile a {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-text-white);
+            transition: var(--transition);
+        }
+
+        .nav-mobile a:hover {
+            color: var(--color-red);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #111111 100%);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
+                radial-gradient(ellipse at 20% 80%, rgba(229, 34, 40, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(229, 34, 40, 0.05) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .hero-bg-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            z-index: 1;
+        }
+
+        #lightning-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-lightning {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 25rem;
+            color: rgba(229, 34, 40, 0.04);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(229, 34, 40, 0.15);
+            border: 1px solid rgba(229, 34, 40, 0.3);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-red);
+            margin-bottom: 30px;
+        }
+
+        .hero-badge i {
+            font-size: 0.7rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            color: var(--color-text-white);
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero h1 .highlight {
+            color: var(--color-red);
+        }
+
+        .hero-slogan {
+            font-family: var(--font-body);
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            font-weight: 300;
+            color: var(--color-text-light);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .hero-sub {
+            font-family: var(--font-body);
+            font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+            font-weight: 400;
+            color: var(--color-text-muted);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn-cta-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: var(--color-red);
+            color: var(--color-text-white);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-cta-large:hover {
+            background: var(--color-red-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px var(--color-red-glow);
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            background: transparent;
+            color: var(--color-text-white);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--color-text-white);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .scroll-indicator {
+            text-decoration: none;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-muted);
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: bounce 2s infinite;
+        }
+
+        .scroll-indicator i {
+            font-size: 1.2rem;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
+
+        /* ============================================
+           SECTION COMMON STYLES
+           ============================================ */
+        .section {
+            padding: var(--section-padding);
+        }
+
+        .section-dark {
+            background: var(--color-bg-dark);
+        }
+
+        .section-darker {
+            background: var(--color-bg-darker);
+        }
+
+        .section-alt {
+            background: var(--color-bg-section-alt);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            margin-bottom: 15px;
+            color: var(--color-text-white);
+        }
+
+        .section-header .section-line {
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--color-red);
+            margin: 15px auto;
+        }
+
+        .section-header p {
+            font-size: 1rem;
+            color: var(--color-text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* ============================================
+           SERVICES CAROUSEL
+           ============================================ */
+        .services-carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .services-carousel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .services-slide {
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            padding: 0 4px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            padding: 35px 28px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--color-red);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .service-icon {
+            width: 55px;
+            height: 55px;
+            background: rgba(229, 34, 40, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .service-icon i {
+            font-size: 1.4rem;
+            color: var(--color-red);
+        }
+
+        .service-card h3 {
+            font-family: var(--font-body);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-text-white);
+            margin-bottom: 12px;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            line-height: 1.7;
+        }
+
+        .services-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .services-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            background: transparent;
+            color: var(--color-text-white);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .services-btn:hover {
+            border-color: var(--color-red);
+            background: var(--color-red);
+            color: white;
+        }
+
+        .services-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .services-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .services-dot.active {
+            background: var(--color-red);
+            transform: scale(1.2);
+        }
+
+        /* ============================================
+           USP SECTION
+           ============================================ */
+        .usp-section {
+            position: relative;
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0a0a0a 0%, var(--color-bg-dark) 100%);
+            overflow: hidden;
+        }
+
+        .usp-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(229, 34, 40, 0.06) 0%, transparent 60%);
+        }
+
+        .usp-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .usp-main-text {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            text-transform: uppercase;
+            color: var(--color-text-white);
+            margin-bottom: 15px;
+        }
+
+        .usp-main-text .highlight {
+            color: var(--color-red);
+        }
+
+        .usp-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 50px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .usp-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .usp-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .usp-item:hover {
+            border-color: var(--color-red);
+            background: rgba(229, 34, 40, 0.05);
+            transform: translateY(-3px);
+        }
+
+        .usp-item i {
+            font-size: 2rem;
+            color: var(--color-red);
+            margin-bottom: 15px;
+        }
+
+        .usp-item h4 {
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0;
+            color: var(--color-text-white);
+        }
+
+        .btn-red {
+            display: inline-block;
+            padding: 16px 40px;
+            background: var(--color-red);
+            color: var(--color-text-white);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: var(--transition);
+            letter-spacing: 0.5px;
+        }
+
+        .btn-red:hover {
+            background: var(--color-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px var(--color-red-glow);
+        }
+
+        /* ============================================
+           ABOUT SECTION
+           ============================================ */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .about-accent {
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            width: 120px;
+            height: 120px;
+            border: 3px solid var(--color-red);
+            border-radius: 8px;
+            z-index: -1;
+        }
+
+        .about-text h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            margin-bottom: 20px;
+            color: var(--color-text-white);
+        }
+
+        .about-text h2 .highlight {
+            color: var(--color-red);
+        }
+
+        .about-text p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: var(--color-text-light);
+            margin-bottom: 20px;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--color-red);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        /* ============================================
+           GALLERY / REFERENCES SECTION
+           ============================================ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 0.85fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Főkép – bal, 2 oszlop széles, 2 sor magas */
+        .gallery-item:nth-child(1) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+
+        /* Jobb felső */
+        .gallery-item:nth-child(2) {
+            grid-column: 3;
+            grid-row: 1;
+        }
+
+        /* Jobb alsó */
+        .gallery-item:nth-child(3) {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        /* Alsó bal */
+        .gallery-item:nth-child(4) {
+            grid-column: 1;
+            grid-row: 3;
+        }
+
+        /* Alsó jobb – a főkép szélességén belül */
+        .gallery-item:nth-child(5) {
+            grid-column: 2;
+            grid-row: 3;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(229, 34, 40, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            background: rgba(229, 34, 40, 0.7);
+        }
+
+        .gallery-overlay i {
+            font-size: 2rem;
+            color: white;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay i {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* ============================================
+           TESTIMONIALS SECTION
+           ============================================ */
+        .testimonials-wrapper {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .testimonials-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 0 20px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 6rem;
+            color: rgba(229, 34, 40, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-stars i {
+            color: #FFB800;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-text-light);
+            font-style: italic;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--color-text-white);
+            font-size: 1rem;
+        }
+
+        .testimonial-role {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+            margin-top: 4px;
+        }
+
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .testimonial-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--color-border);
+            background: transparent;
+            color: var(--color-text-white);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            font-size: 1rem;
+        }
+
+        .testimonial-btn:hover {
+            border-color: var(--color-red);
+            background: var(--color-red);
+            color: white;
+        }
+
+        .testimonial-dots {
+            display: flex;
+            gap: 8px;
+        }
+
+        .testimonial-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .testimonial-dot.active {
+            background: var(--color-red);
+            transform: scale(1.2);
+        }
+
+        /* ============================================
+           PARTNERS SECTION
+           ============================================ */
+        .partners-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .partner-card {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-text-light);
+            transition: var(--transition);
+        }
+
+        .partner-card:hover {
+            border-color: var(--color-red);
+            background: rgba(229, 34, 40, 0.05);
+            transform: translateY(-2px);
+        }
+
+        .partner-card i {
+            color: var(--color-red);
+            font-size: 0.95rem;
+        }
+
+        /* ============================================
+           CONTACT / FORM SECTION
+           ============================================ */
+        .contact-section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-info h2 {
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 20px;
+            color: var(--color-text-white);
+        }
+
+        .contact-info h2 .highlight {
+            color: var(--color-red);
+        }
+
+        .contact-info>p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 35px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 35px;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-detail-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-icon i {
+            font-size: 1.1rem;
+            color: var(--color-red);
+        }
+
+        .contact-detail-text span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+
+        .contact-detail-text a,
+        .contact-detail-text p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-text-white);
+        }
+
+        .contact-detail-text a:hover {
+            color: var(--color-red);
+        }
+
+        .contact-socials {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-link {
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-light);
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--color-red);
+            border-color: var(--color-red);
+            color: white;
+        }
+
+        /* Form */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 40px;
+        }
+
+        .contact-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: var(--color-text-white);
+        }
+
+        .contact-form .form-subtitle {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            margin-bottom: 30px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-text-muted);
+            margin-bottom: 8px;
+        }
+
+        .form-group label .required {
+            color: var(--color-red);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            color: var(--color-text-white);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.25);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--color-red);
+            background: rgba(229, 34, 40, 0.05);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23999' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+        }
+
+        .form-group select option {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .file-upload {
+            border: 2px dashed var(--color-border);
+            border-radius: 8px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .file-upload:hover {
+            border-color: var(--color-red);
+        }
+
+        .file-upload i {
+            font-size: 1.5rem;
+            color: var(--color-text-muted);
+            margin-bottom: 8px;
+        }
+
+        .file-upload p {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .file-upload input {
+            display: none;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: var(--color-red);
+            color: white;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 10px;
+        }
+
+        .form-submit:hover {
+            background: var(--color-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px var(--color-red-glow);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--color-bg-darker);
+            border-top: 1px solid var(--color-border);
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-red);
+        }
+
+        /* ============================================
+           SCROLL ANIMATIONS
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-accent {
+                display: none;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --header-height: 70px;
+                --section-padding: 70px 0;
+            }
+
+            .nav-desktop {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-mobile {
+                display: flex;
+            }
+
+            .hero-lightning {
+                font-size: 15rem;
+                right: -5%;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+            }
+
+            .btn-cta-large,
+            .btn-outline {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .services-slide {
+                grid-template-columns: 1fr;
+            }
+
+            .usp-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            .stat-number {
+                font-size: 1.6rem;
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto;
+            }
+
+            .gallery-item:nth-child(1) {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full-width {
+                grid-column: span 1;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+
+            .testimonial-card {
+                padding: 25px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .usp-items {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3),
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5) {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+    <header id="site-header">
+        <div class="header-inner">
+            <a href="#hero" class="header-logo">
+                <img src="kormyvill-logo.png" alt="KormyVill logó" class="header-logo-img">
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="#szolgaltatasok">Szolgáltatások</a>
+                <a href="#rolunk">Rólunk</a>
+                <a href="#referenciak">Referenciák</a>
+                <a href="#velemenyek">Vélemények</a>
+                <a href="#kapcsolat">Kapcsolat</a>
+            </nav>
+
+            <div class="header-right">
+                <a href="#kapcsolat" class="btn-cta">Árajánlatkérés</a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="nav-mobile" id="nav-mobile">
+            <a href="#szolgaltatasok">Szolgáltatások</a>
+            <a href="#rolunk">Rólunk</a>
+            <a href="#referenciak">Referenciák</a>
+            <a href="#velemenyek">Vélemények</a>
+            <a href="#kapcsolat">Kapcsolat</a>
+            <a href="#kapcsolat" class="btn-cta" style="margin-top: 10px;">Árajánlatkérés</a>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+    <section class="hero" id="hero">
+        <canvas id="lightning-canvas"></canvas>
+        <div class="hero-bg-grid"></div>
+        <div class="hero-lightning">
+            <i class="fas fa-bolt"></i>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-bolt"></i>
+                Regisztrált villanyszerelő
+            </div>
+            <h1>Professzionális <span class="highlight">villanyszerelés</span> az Ön otthonáért</h1>
+            <p class="hero-slogan">20 év tapasztalat &mdash; az első nap lendületével.</p>
+            <p class="hero-sub">Családi házak, lakások teljes körű elektromos hálózat kivitelezése, felújítása és
+                felülvizsgálata. Minden folyamat egy kézben.</p>
+            <div class="hero-actions">
+                <a href="#kapcsolat" class="btn-cta-large">
+                    <i class="fas fa-file-alt"></i>
+                    Ingyenes árajánlat kérése
+                </a>
+                <a href="tel:+36202854996" class="btn-outline">
+                    <i class="fas fa-phone"></i>
+                    Hívjon most!
+                </a>
+            </div>
+        </div>
+        <a href="#szolgaltatasok" class="scroll-indicator">
+            <span>Görgessen</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- ========================================
+         SERVICES SECTION
+         ======================================== -->
+    <section class="section section-dark" id="szolgaltatasok">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Villanyszerelés &mdash; Szolgáltatásaink</h2>
+                <span class="section-line"></span>
+                <p>Teljes körű lakossági villanyszerelés, a tervezéstől a kivitelezésen át a felülvizsgálatig. Profi
+                    megoldások, költséghatékony árakon.</p>
+            </div>
+            <div class="services-carousel-wrapper reveal">
+                <div class="services-carousel" id="services-carousel">
+                    <!-- Slide 1: Cards 1-3 -->
+                    <div class="services-slide">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <h3>Családi házak elektromos hálózata</h3>
+                            <p>Új családi házak teljes elektromos hálózatának megtervezése és kivitelezése a legmagasabb
+                                biztonsági szabványok szerint.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>Lakások elektromos kivitelezése</h3>
+                            <p>Lakások elektromos hálózatának szakszerű kiépítése és modernizálása, az igényekhez
+                                igazítva.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Elektromos hálózat felújítás</h3>
+                            <p>Elavult elektromos rendszerek teljes felújítása, korszerűsítése a mai szabványoknak és
+                                igényeknek megfelelően.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2: Cards 4-6 -->
+                    <div class="services-slide">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h3>Hibaelhárítás</h3>
+                            <p>Gyors és megbízható elektromos hibaelhárítás. Zárlatok, rövidzárlatok és egyéb hibák
+                                szakszerű javítása.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-car-battery"></i>
+                            </div>
+                            <h3>Elektromos autótöltő kiépítés</h3>
+                            <p>Otthoni és társasházi elektromos autótöltő állomás szakszerű telepítése, üzembe
+                                helyezése.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                            <h3>Regisztrált szerelői ügyintézés</h3>
+                            <p>Teljes körű szolgáltatói ügyintézés az ELMŰ, ÉMÁSZ és EON felé. Ne pazarolja idejét
+                                &mdash; mi intézzük!</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3: Cards 7-9 -->
+                    <div class="services-slide">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <h3>Villanyóra helyek kiépítése</h3>
+                            <p>Új méréshelyek létesítése, villanyóra szekrény telepítés a szolgáltatói előírásoknak
+                                megfelelően.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h3>Villamos biztonsági felülvizsgálat</h3>
+                            <p>Szabványos villamos biztonsági felülvizsgálat, mérési jegyzőkönyv kiadással. Hivatalos
+                                dokumentáció.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3>Villámvédelem és villámhárítás</h3>
+                            <p>Villámvédelmi rendszerek tervezése, telepítése és karbantartása. Védelem a természet
+                                erejétől.</p>
+                        </div>
+                    </div>
+                    <!-- Slide 4: Cards 10-12 -->
+                    <div class="services-slide">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-house"></i>
+                            </div>
+                            <h3>Elektronikus építési napló</h3>
+                            <p>Elektronikus építési napló szakszerű vezetése, minden jogszabályi előírásnak megfelelően.
+                            </p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-hard-hat"></i>
+                            </div>
+                            <h3>Felelős műszaki vezetés</h3>
+                            <p>Felelős műszaki vezetői tevékenység, az építési projekt teljes elektromos munkálatainak
+                                felügyeletével.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Regisztrált szerelői képzések</h3>
+                            <p>Regisztrált szerelői képzések tartása. Osztozunk tudásunkból, hogy a szakma színvonala
+                                emelkedjen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-controls">
+                    <button class="services-btn" id="services-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="services-dots" id="services-dots"></div>
+                    <button class="services-btn" id="services-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         USP SECTION
+         ======================================== -->
+    <section class="usp-section" id="miert-mi">
+        <div class="container">
+            <div class="usp-content reveal">
+                <div class="usp-main-text">
+                    Minden folyamat <span class="highlight">egy kézben.</span>
+                </div>
+                <p class="usp-subtitle">Önnek nem kell több szakemberrel egyeztetnie. A tervezéstől a kivitelezésen át a
+                    hatósági ügyintézésig mindent mi intézünk.</p>
+                <div class="usp-items">
+                    <div class="usp-item">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h4>Órahely kiépítés</h4>
+                    </div>
+                    <div class="usp-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <h4>Hálózat kivitelezés</h4>
+                    </div>
+                    <div class="usp-item">
+                        <i class="fas fa-clipboard-check"></i>
+                        <h4>Felülvizsgálat</h4>
+                    </div>
+                    <div class="usp-item">
+                        <i class="fas fa-file-signature"></i>
+                        <h4>Szolgáltatói ügyintézés</h4>
+                    </div>
+                    <div class="usp-item">
+                        <i class="fas fa-bolt"></i>
+                        <h4>Villámvédelem</h4>
+                    </div>
+                    <div class="usp-item">
+                        <i class="fas fa-hard-hat"></i>
+                        <h4>Műszaki vezetés</h4>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#kapcsolat" class="btn-red">Árajánlatot kérek!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT SECTION
+         ======================================== -->
+    <section class="section section-dark" id="rolunk">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="about_electrician.png" alt="KormyVill villanyszerelő munka közben">
+                    <div class="about-accent"></div>
+                </div>
+                <div class="about-text reveal">
+                    <h2>20 éve a <span class="highlight">villanyszerelés</span> szolgálatában</h2>
+                    <p>A KormyVill egy családi vállalkozás, többgenerációs tapasztalattal az elektromos szakmában. Több
+                        mint két évtizede végzünk lakossági villanyszerelési munkákat &mdash; a legkisebb javítástól a
+                        teljes kivitelezésig.</p>
+                    <p>Regisztrált villanyszerelőként nem csak kivitelezünk, hanem képzéseket is tartunk a szakma
+                        következő generációjának. Tudjuk, mit jelent a felelősségteljes, precíz munka &mdash; és ezt
+                        minden projektünkben képviseljük.</p>
+                    <p>Költséghatékony, mégis profi megoldásokat kínálunk. Nálunk nincs rejtett költség, nincs
+                        meglepetés &mdash; csak átlátható, tisztességes munka.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Év tapasztalat</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Elkészült projekt</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Elégedettség</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         GALLERY / REFERENCES SECTION
+         ======================================== -->
+    <section class="section section-alt" id="referenciak">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Referenciáink</h2>
+                <span class="section-line"></span>
+                <p>Válogatott munkáink családi házak, lakások és ipari ingatlanok villanyszereléséből. Minden projekt
+                    mögött precíz tervezés és szakszerű kivitelezés áll.</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item">
+                    <img src="house_construction.png" alt="Családi ház villamos kivitelezése">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="distribution_board.png" alt="Profi módon szerelt elosztószekrény">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="meter_installation.png" alt="Szabványos villanyórahely kiépítés">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="apartment_renovation.png" alt="Lakásfelújítás villamos munkái">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ev_charger.png" alt="Elektromos autótöltő telepítése">
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TESTIMONIALS SECTION
+         ======================================== -->
+    <section class="section section-dark" id="velemenyek">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Ügyfeleink mondták</h2>
+                <span class="section-line"></span>
+                <p>Elégedett ügyfeleink véleményei. A legjobb referencia az Ön elégedettsége.</p>
+            </div>
+            <div class="testimonials-wrapper reveal">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">&bdquo;Teljes lakásfelújításhoz kértük Viktor segítségét. A
+                                munka precíz volt, az időpontokat pontosan tartotta, és a végeredmény tökéletesre
+                                sikerült. Csak ajánlani tudom!&rdquo;</p>
+                            <p class="testimonial-author">Kovács Anikó</p>
+                            <p class="testimonial-role">Lakásfelújítás &mdash; Budapest</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">&bdquo;Új családi házunkhoz kellett teljes elektromos hálózat. A
+                                KormyVill csapata mindent megoldott egy kézben: a tervezéstől az ügyintézésig. Profi és
+                                megbízható munka.&rdquo;</p>
+                            <p class="testimonial-author">Szabó Péter</p>
+                            <p class="testimonial-role">Családi ház kivitelezés &mdash; Gödöllő</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">&bdquo;Elektromos autótöltő telepítését kértük. Gyorsan,
+                                tisztán, profin megoldották. Az ELMŰ-s ügyintézést is intézték, ami hatalmas segítség
+                                volt.&rdquo;</p>
+                            <p class="testimonial-author">Tóth Gábor</p>
+                            <p class="testimonial-role">Autótöltő telepítés &mdash; Érd</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">&bdquo;Villamos biztonsági felülvizsgálatot végeztek a
+                                társasházunkban. Alapos, pontos, gyors munka. A jegyzőkönyvek is rendben megjöttek.
+                                Maximális elégedettség!&rdquo;</p>
+                            <p class="testimonial-author">Nagy Mária</p>
+                            <p class="testimonial-role">Felülvizsgálat &mdash; Budapest</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prev-btn" aria-label="Előző vélemény">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonial-dots" id="testimonial-dots"></div>
+                    <button class="testimonial-btn" id="next-btn" aria-label="Következő vélemény">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PARTNERS SECTION
+         ======================================== -->
+    <section class="section section-alt" id="partnereink">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Akikkel már dolgoztunk együtt</h2>
+                <span class="section-line"></span>
+            </div>
+            <div class="partners-grid reveal">
+                <div class="partner-card">
+                    <i class="fas fa-church"></i>
+                    <span>Gödi Katolikus Templom</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-landmark"></i>
+                    <span>Korda-villa Velence</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotel Korda Budapest</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-school"></i>
+                    <span>Hurok utcai Általános Iskola</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-building"></i>
+                    <span>Ovit ZRT irodaházak</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-bowling-ball"></i>
+                    <span>Katlan Bowling Pálya és Étterem Göd</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-music"></i>
+                    <span>Club Mausoleum Vác</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-snowflake"></i>
+                    <span>WestEnd City Center Jégterasz</span>
+                </div>
+                <div class="partner-card">
+                    <i class="fas fa-store"></i>
+                    <span>Herbária üzletek országszerte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT / FORM SECTION
+         ======================================== -->
+    <section class="section contact-section section-darker" id="kapcsolat">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2>Kérjen <span class="highlight">árajánlatot</span></h2>
+                    <p>Töltse ki az űrlapot, és 24 órán belül felkeressük egyedi ajánlatunkkal. Árajánlatkérés ingyenes
+                        és kötelezettségmentes.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span>Telefon</span>
+                                <a href="tel:+36202854996">+36 20 285 4996</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span>E-mail</span>
+                                <a href="mailto:info@kormyvill.hu">info@kormyvill.hu</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <span>Elérhetőség</span>
+                                <p>Hét - Pén: 7:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="#" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <h3>Árajánlatkérő űrlap</h3>
+                    <p class="form-subtitle">A csillaggal jelölt mezők kitöltése kötelező.</p>
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Név <span class="required">*</span></label>
+                                <input type="text" name="name" placeholder="Teljes név" required>
+                            </div>
+                            <div class="form-group">
+                                <label>E-mail <span class="required">*</span></label>
+                                <input type="email" name="email" placeholder="pelda@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Telefonszám <span class="required">*</span></label>
+                                <input type="tel" name="phone" placeholder="+36 ..." required>
+                            </div>
+                            <div class="form-group">
+                                <label>Település <span class="required">*</span></label>
+                                <input type="text" name="city" placeholder="Pl. Budapest" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Irányítószám <span class="required">*</span></label>
+                                <input type="text" name="zip" placeholder="Pl. 1234" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Ingatlan típusa</label>
+                                <select name="property_type">
+                                    <option value="">Kérem válasszon...</option>
+                                    <option value="csaladi_haz">Családi ház</option>
+                                    <option value="lakas">Lakás</option>
+                                    <option value="tarsashaz">Társasház</option>
+                                    <option value="egyeb">Egyéb</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Rövid leírás <span class="required">*</span></label>
+                            <textarea name="message" placeholder="Írja le röviden, miben segíthetünk..."
+                                required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Kép feltöltés (opcionális)</label>
+                            <label class="file-upload" for="file-input">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Kattintson a feltöltéshez vagy húzza ide a fájlokat</p>
+                                <input type="file" id="file-input" name="files" multiple accept="image/*">
+                            </label>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            <i class="fas fa-paper-plane"></i>&nbsp; Árajánlatkérés küldése
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="kormyvill-logo.png" alt="KormyVill logó" class="footer-logo-img">
+                </div>
+                <p class="footer-text">&copy; 2025 KormyVill. Minden jog fenntartva.</p>
+                <div class="footer-links">
+                    <a href="#">Adatvédelem</a>
+                    <a href="#">ÁSZF</a>
+                    <a href="mailto:info@kormyvill.hu">info@kormyvill.hu</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         JAVASCRIPT
+         ======================================== -->
+    <script>
+        /* ======================
+           STICKY HEADER
+           ====================== */
+        const header = document.getElementById('site-header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            lastScroll = currentScroll;
+        });
+
+        /* ======================
+           MOBILE NAV
+           ====================== */
+        const hamburger = document.getElementById('hamburger');
+        const navMobile = document.getElementById('nav-mobile');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMobile.classList.toggle('open');
+            document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+        });
+
+        navMobile.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMobile.classList.remove('open');
+                document.body.style.overflow = '';
+            });
+        });
+
+        /* ======================
+           TESTIMONIALS CAROUSEL
+           ====================== */
+        const track = document.getElementById('testimonials-track');
+        const slides = track.querySelectorAll('.testimonial-slide');
+        const dotsContainer = document.getElementById('testimonial-dots');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        let currentSlide = 0;
+        let autoplayInterval;
+
+        slides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('testimonial-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.setAttribute('aria-label', `Vélemény ${i + 1}`);
+            dot.addEventListener('click', () => goToSlide(i));
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll('.testimonial-dot');
+
+        function goToSlide(index) {
+            currentSlide = index;
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+        }
+
+        function nextSlide() {
+            goToSlide((currentSlide + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            goToSlide((currentSlide - 1 + slides.length) % slides.length);
+        }
+
+        nextBtn.addEventListener('click', () => { nextSlide(); resetAutoplay(); });
+        prevBtn.addEventListener('click', () => { prevSlide(); resetAutoplay(); });
+
+        // Touch support
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        track.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        track.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+                resetAutoplay();
+            }
+        }, { passive: true });
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 5000);
+        }
+
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+
+        startAutoplay();
+
+        /* ======================
+           SERVICES CAROUSEL
+           ====================== */
+        const servicesCarousel = document.getElementById('services-carousel');
+        const servicesSlides = servicesCarousel.querySelectorAll('.services-slide');
+        const servicesDotsContainer = document.getElementById('services-dots');
+        const servicesPrevBtn = document.getElementById('services-prev');
+        const servicesNextBtn = document.getElementById('services-next');
+        let currentServiceSlide = 0;
+        let servicesAutoplayInterval;
+
+        servicesSlides.forEach((_, i) => {
+            const dot = document.createElement('button');
+            dot.classList.add('services-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.setAttribute('aria-label', `Szolgáltatás oldal ${i + 1}`);
+            dot.addEventListener('click', () => goToServiceSlide(i));
+            servicesDotsContainer.appendChild(dot);
+        });
+
+        const servicesDots = servicesDotsContainer.querySelectorAll('.services-dot');
+
+        function goToServiceSlide(index) {
+            currentServiceSlide = index;
+            servicesCarousel.style.transform = `translateX(-${currentServiceSlide * 100}%)`;
+            servicesDots.forEach((d, i) => d.classList.toggle('active', i === currentServiceSlide));
+        }
+
+        function nextServiceSlide() {
+            goToServiceSlide((currentServiceSlide + 1) % servicesSlides.length);
+        }
+
+        function prevServiceSlide() {
+            goToServiceSlide((currentServiceSlide - 1 + servicesSlides.length) % servicesSlides.length);
+        }
+
+        servicesNextBtn.addEventListener('click', () => { nextServiceSlide(); resetServicesAutoplay(); });
+        servicesPrevBtn.addEventListener('click', () => { prevServiceSlide(); resetServicesAutoplay(); });
+
+        // Touch support for services carousel
+        let servicesTouchStartX = 0;
+        let servicesTouchEndX = 0;
+
+        servicesCarousel.addEventListener('touchstart', (e) => {
+            servicesTouchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        servicesCarousel.addEventListener('touchend', (e) => {
+            servicesTouchEndX = e.changedTouches[0].screenX;
+            const diff = servicesTouchStartX - servicesTouchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextServiceSlide();
+                else prevServiceSlide();
+                resetServicesAutoplay();
+            }
+        }, { passive: true });
+
+        function startServicesAutoplay() {
+            servicesAutoplayInterval = setInterval(nextServiceSlide, 6000);
+        }
+
+        function resetServicesAutoplay() {
+            clearInterval(servicesAutoplayInterval);
+            startServicesAutoplay();
+        }
+
+        startServicesAutoplay();
+
+        /* ======================
+           SCROLL REVEAL
+           ====================== */
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        /* ======================
+           SMOOTH SCROLL
+           ====================== */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        /* ======================
+           FILE UPLOAD DISPLAY
+           ====================== */
+        const fileInput = document.getElementById('file-input');
+        const fileUploadLabel = fileInput.closest('.file-upload');
+
+        fileInput.addEventListener('change', () => {
+            const files = fileInput.files;
+            if (files.length > 0) {
+                const names = Array.from(files).map(f => f.name).join(', ');
+                fileUploadLabel.querySelector('p').textContent = `${files.length} fájl kiválasztva: ${names}`;
+            }
+        });
+
+        /* ======================
+           FORM SUBMISSION
+           ====================== */
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('.form-submit');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i>&nbsp; Elküldve! Hamarosan jelentkezünk.';
+            btn.style.background = '#22c55e';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+                this.reset();
+                fileUploadLabel.querySelector('p').textContent = 'Kattintson a feltöltéshez vagy húzza ide a fájlokat';
+            }, 4000);
+        });
+
+        /* ======================
+           ACTIVE NAV HIGHLIGHT
+           ====================== */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-desktop a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.color = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.color = 'var(--color-red)';
+                }
+            });
+        });
+
+        /* ======================
+           INTERACTIVE LIGHTNING
+           ====================== */
+        const canvas = document.getElementById('lightning-canvas');
+        const ctx = canvas.getContext('2d');
+        const heroSection = document.getElementById('hero');
+
+        let width, height;
+        let mouseX = -1000;
+        let mouseY = -1000;
+        let lightningStrikes = [];
+
+        function resize() {
+            width = canvas.width = heroSection.offsetWidth;
+            height = canvas.height = heroSection.offsetHeight;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        heroSection.addEventListener('mousemove', (e) => {
+            const rect = heroSection.getBoundingClientRect();
+            mouseX = e.clientX - rect.left;
+            mouseY = e.clientY - rect.top;
+
+            if (Math.random() > 0.7) {
+                createLightning();
+            }
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+            mouseX = -1000;
+            mouseY = -1000;
+        });
+
+        class Lightning {
+            constructor(startX, startY, endX, endY) {
+                this.segments = [];
+                this.life = 1.0;
+                this.decay = 0.1 + Math.random() * 0.1;
+                this.generate(startX, startY, endX, endY);
+            }
+
+            generate(startX, startY, endX, endY) {
+                let x = startX;
+                let y = startY;
+                const segmentsCount = 5 + Math.floor(Math.random() * 3);
+
+                for (let i = 0; i < segmentsCount; i++) {
+                    const tx = startX + (endX - startX) * (i / segmentsCount);
+                    const ty = startY + (endY - startY) * (i / segmentsCount);
+
+                    const nx = tx + (Math.random() - 0.5) * 20;
+                    const ny = ty + (Math.random() - 0.5) * 20;
+
+                    this.segments.push({ x1: x, y1: y, x2: nx, y2: ny });
+                    x = nx;
+                    y = ny;
+                }
+                this.segments.push({ x1: x, y1: y, x2: endX, y2: endY });
+            }
+
+            draw() {
+                ctx.strokeStyle = `rgba(229, 34, 40, ${this.life})`;
+                ctx.lineWidth = (1 + Math.random()) * this.life;
+                ctx.shadowColor = '#E52228';
+                ctx.shadowBlur = 10 * this.life;
+
+                ctx.beginPath();
+                this.segments.forEach(seg => {
+                    ctx.moveTo(seg.x1, seg.y1);
+                    ctx.lineTo(seg.x2, seg.y2);
+                });
+                ctx.stroke();
+                this.life -= this.decay;
+            }
+        }
+
+        function createLightning() {
+            if (mouseX < 0) return;
+
+            // Multiple mini-strikes in a circle
+            const strikesInCycle = 2 + Math.floor(Math.random() * 3);
+            const radius = 60 + Math.random() * 40;
+
+            for (let i = 0; i < strikesInCycle; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const startX = mouseX + Math.cos(angle) * radius;
+                const startY = mouseY + Math.sin(angle) * radius;
+                lightningStrikes.push(new Lightning(startX, startY, mouseX, mouseY));
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            ctx.shadowBlur = 0;
+
+            for (let i = lightningStrikes.length - 1; i >= 0; i--) {
+                lightningStrikes[i].draw();
+                if (lightningStrikes[i].life <= 0) {
+                    lightningStrikes.splice(i, 1);
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+    </script>
+</body>
+
+</html>
