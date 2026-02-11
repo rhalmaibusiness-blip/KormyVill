@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adatvédelmi Nyilatkozat – KormyVill</title>
+    <meta name="description" content="KormyVill adatvédelmi nyilatkozat – Tájékoztatás a személyes adatok kezeléséről.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kormyvill.hu/adatvedelmi-nyilatkozat.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --color-bg-dark: #111111;
+            --color-bg-darker: #0a0a0a;
+            --color-bg-card: #1a1a1a;
+            --color-red: #E52228;
+            --color-red-hover: #c91c22;
+            --color-text-white: #ffffff;
+            --color-text-light: #cccccc;
+            --color-text-muted: #999999;
+            --color-border: rgba(255, 255, 255, 0.1);
+            --font-heading: 'Anton', sans-serif;
+            --font-body: 'Montserrat', sans-serif;
+            --header-height: 80px;
+            --container-width: 1200px;
+            --transition: all 0.3s ease;
+        }
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            color: var(--color-text-white);
+            background-color: var(--color-bg-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: var(--header-height);
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .header-inner {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo-img {
+            height: 55px;
+            width: auto;
+        }
+
+        .header-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 10px 20px;
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            transition: var(--transition);
+        }
+
+        .header-back:hover {
+            color: var(--color-red);
+            border-color: var(--color-red);
+        }
+
+        /* MAIN CONTENT */
+        .privacy-hero {
+            padding: 140px 0 60px;
+            text-align: center;
+            background: var(--color-bg-darker);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .privacy-hero h1 {
+            font-family: var(--font-heading);
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-text-white);
+        }
+
+        .privacy-hero h1 span {
+            color: var(--color-red);
+        }
+
+        .privacy-hero p {
+            color: var(--color-text-muted);
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .privacy-content {
+            padding: 60px 0 80px;
+        }
+
+        .privacy-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 50px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .privacy-card h2 {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--color-red);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .privacy-card h2:first-child {
+            margin-top: 0;
+        }
+
+        .privacy-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text-white);
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+
+        .privacy-card p {
+            color: var(--color-text-light);
+            font-size: 0.92rem;
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .privacy-card ul {
+            list-style: none;
+            margin-bottom: 12px;
+            padding-left: 0;
+        }
+
+        .privacy-card ul li {
+            color: var(--color-text-light);
+            font-size: 0.92rem;
+            line-height: 1.8;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .privacy-card ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 6px;
+            height: 6px;
+            background: var(--color-red);
+            border-radius: 50%;
+        }
+
+        .privacy-card strong {
+            color: var(--color-text-white);
+        }
+
+        .privacy-card a {
+            color: var(--color-red);
+        }
+
+        .privacy-card a:hover {
+            text-decoration: underline;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        .info-table td {
+            padding: 10px 14px;
+            font-size: 0.92rem;
+            color: var(--color-text-light);
+            border-bottom: 1px solid var(--color-border);
+            vertical-align: top;
+        }
+
+        .info-table td:first-child {
+            font-weight: 600;
+            color: var(--color-text-white);
+            white-space: nowrap;
+            width: 200px;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--color-bg-darker);
+            border-top: 1px solid var(--color-border);
+            padding: 40px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-red);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .privacy-hero h1 {
+                font-size: 2rem;
+            }
+
+            .privacy-card {
+                padding: 30px 20px;
+            }
+
+            .info-table td:first-child {
+                white-space: normal;
+                width: auto;
+            }
+
+            .info-table td {
+                display: block;
+                padding: 6px 14px;
+            }
+
+            .info-table td:first-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+
+            .info-table tr {
+                display: block;
+                border-bottom: 1px solid var(--color-border);
+                padding: 8px 0;
+            }
+
+            .info-table td {
+                border-bottom: none;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html">
+                <img src="kormyvill-logo.png" alt="KormyVill logó" class="header-logo-img">
+            </a>
+            <a href="index.html" class="header-back">
+                <i class="fas fa-arrow-left"></i> Vissza a főoldalra
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="privacy-hero">
+        <div class="container">
+            <h1>Adatvédelmi <span>Nyilatkozat</span></h1>
+            <p>Hatályos: 2025. január 1-től</p>
+        </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="privacy-content">
+        <div class="container">
+            <div class="privacy-card">
+
+                <h2>1. Az Adatkezelő adatai</h2>
+                <table class="info-table">
+                    <tr>
+                        <td>Adatkezelő neve:</td>
+                        <td>Kormos István egyéni vállalkozó</td>
+                    </tr>
+                    <tr>
+                        <td>Székhely:</td>
+                        <td>2132 Göd, Felsőgöd, Rákóczi Ferenc utca 137.</td>
+                    </tr>
+                    <tr>
+                        <td>Adószám:</td>
+                        <td>63311185-1-33</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><a href="mailto:info@kormyvill.hu">info@kormyvill.hu</a></td>
+                    </tr>
+                    <tr>
+                        <td>Weboldal:</td>
+                        <td><a href="https://kormyvill.hu">https://kormyvill.hu</a></td>
+                    </tr>
+                </table>
+
+                <h2>2. A nyilatkozat célja és hatálya</h2>
+                <p>Kormos István egyéni vállalkozó (a továbbiakban: <strong>Adatkezelő</strong>) a jelen Adatvédelmi Nyilatkozattal tájékoztatja a <a href="https://kormyvill.hu">kormyvill.hu</a> weboldal (a továbbiakban: <strong>Weboldal</strong>) látogatóit a személyes adatok kezelésének módjáról, az adatkezelés elveiről és az érintettek jogairól.</p>
+                <p>Az adatkezelés az Európai Parlament és a Tanács (EU) 2016/679 számú általános adatvédelmi rendelete (<strong>GDPR</strong>) és az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény (<strong>Infotv.</strong>) alapján történik.</p>
+
+                <h2>3. A kezelt személyes adatok köre</h2>
+
+                <h3>3.1. Kapcsolatfelvételi űrlap</h3>
+                <p>Amikor a Weboldalon található kapcsolatfelvételi űrlapot kitölti, az alábbi adatokat kezeljük:</p>
+                <ul>
+                    <li>Név</li>
+                    <li>E-mail cím</li>
+                    <li>Telefonszám</li>
+                    <li>Üzenet tartalma</li>
+                    <li>Csatolt fájlok (amennyiben releváns)</li>
+                </ul>
+
+                <h3>3.2. Automatikusan gyűjtött adatok</h3>
+                <p>A Weboldal használata során az alábbi adatok automatikusan gyűjtésre kerülhetnek:</p>
+                <ul>
+                    <li>IP-cím</li>
+                    <li>Böngésző típusa és verziója</li>
+                    <li>Operációs rendszer</li>
+                    <li>Látogatás időpontja és időtartama</li>
+                    <li>Meglátogatott oldalak</li>
+                </ul>
+
+                <h2>4. Az adatkezelés célja és jogalapja</h2>
+
+                <table class="info-table">
+                    <tr>
+                        <td>Cél</td>
+                        <td>Jogalap</td>
+                    </tr>
+                    <tr>
+                        <td>Kapcsolatfelvétel, árajánlat készítés</td>
+                        <td>Az érintett hozzájárulása (GDPR 6. cikk (1) bek. a) pont)</td>
+                    </tr>
+                    <tr>
+                        <td>Szerződés teljesítése</td>
+                        <td>Szerződés teljesítéséhez szükséges (GDPR 6. cikk (1) bek. b) pont)</td>
+                    </tr>
+                    <tr>
+                        <td>Weboldal működtetése, fejlesztése</td>
+                        <td>Az Adatkezelő jogos érdeke (GDPR 6. cikk (1) bek. f) pont)</td>
+                    </tr>
+                    <tr>
+                        <td>Jogi kötelezettség teljesítése</td>
+                        <td>Jogi kötelezettség (GDPR 6. cikk (1) bek. c) pont)</td>
+                    </tr>
+                </table>
+
+                <h2>5. Az adatkezelés időtartama</h2>
+                <ul>
+                    <li><strong>Kapcsolatfelvételi adatok:</strong> az ügy lezárásától számított 1 év, kivéve, ha jogszabály ennél hosszabb megőrzést ír elő.</li>
+                    <li><strong>Szerződéses adatok:</strong> a szerződés megszűnésétől számított 5 év (számviteli és adójogi kötelezettségek miatt).</li>
+                    <li><strong>Automatikusan gyűjtött adatok:</strong> legfeljebb 1 év.</li>
+                </ul>
+
+                <h2>6. Az adatok továbbítása</h2>
+                <p>Az Adatkezelő személyes adatokat harmadik fél részére nem ad át, kivéve az alábbi eseteket:</p>
+                <ul>
+                    <li>Jogszabályi kötelezettség teljesítése céljából (pl. hatósági megkeresés)</li>
+                    <li>Tárhelyszolgáltató (Vercel Inc.) – a Weboldal üzemeltetéséhez szükséges mértékben</li>
+                </ul>
+                <p>Az Adatkezelő nem továbbít adatokat harmadik országba vagy nemzetközi szervezet részére.</p>
+
+                <h2>7. Sütik (Cookie-k)</h2>
+                <p>A Weboldal jelenleg kizárólag a működéshez feltétlenül szükséges technikai sütiket használ, amelyekhez nem szükséges az Ön hozzájárulása. A Weboldal nem használ nyomkövető (tracking) vagy marketing célú sütiket.</p>
+
+                <h2>8. Az érintett jogai</h2>
+                <p>Ön az alábbi jogokkal rendelkezik személyes adatai kapcsán:</p>
+                <ul>
+                    <li><strong>Hozzáférési jog:</strong> Tájékoztatást kérhet arról, hogy milyen adatait kezeljük.</li>
+                    <li><strong>Helyesbítéshez való jog:</strong> Kérheti pontatlan adatainak kijavítását.</li>
+                    <li><strong>Törléshez való jog:</strong> Kérheti adatai törlését, amennyiben az adatkezelés célja megszűnt.</li>
+                    <li><strong>Adatkezelés korlátozásához való jog:</strong> Kérheti adatai kezelésének korlátozását.</li>
+                    <li><strong>Adathordozhatósághoz való jog:</strong> Kérheti adatai géppel olvasható formátumban történő átadását.</li>
+                    <li><strong>Tiltakozáshoz való jog:</strong> Tiltakozhat adatai kezelése ellen jogos érdek alapú adatkezelés esetén.</li>
+                    <li><strong>Hozzájárulás visszavonása:</strong> A hozzájáruláson alapuló adatkezelés esetén hozzájárulását bármikor visszavonhatja.</li>
+                </ul>
+                <p>Jogai gyakorlásához kérjük, forduljon hozzánk az <a href="mailto:info@kormyvill.hu">info@kormyvill.hu</a> e-mail címen.</p>
+
+                <h2>9. Jogorvoslati lehetőségek</h2>
+                <p>Amennyiben úgy véli, hogy személyes adatainak kezelése sérti a jogszabályi előírásokat, az alábbi jogorvoslati lehetőségekkel élhet:</p>
+                <ul>
+                    <li><strong>Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)</strong><br>
+                        Cím: 1055 Budapest, Falk Miksa utca 9-11.<br>
+                        Telefon: +36 (1) 391-1400<br>
+                        E-mail: ugyfelszolgalat@naih.hu<br>
+                        Weboldal: <a href="https://naih.hu" target="_blank" rel="noopener">https://naih.hu</a>
+                    </li>
+                    <li>Bírósághoz fordulhat az Infotv. és a GDPR alapján.</li>
+                </ul>
+
+                <h2>10. Adatbiztonság</h2>
+                <p>Az Adatkezelő megtesz minden szükséges technikai és szervezési intézkedést a személyes adatok biztonsága érdekében, különösen az adatok jogosulatlan hozzáférése, megváltoztatása, továbbítása, nyilvánosságra hozatala, törlése vagy megsemmisítése ellen.</p>
+
+                <h2>11. A nyilatkozat módosítása</h2>
+                <p>Az Adatkezelő fenntartja a jogot a jelen Adatvédelmi Nyilatkozat módosítására. A módosított nyilatkozat a Weboldalon történő közzététellel lép hatályba. Az érintetteket a módosításról a Weboldalon keresztül tájékoztatjuk.</p>
+
+                <p style="margin-top: 40px; color: var(--color-text-muted); font-size: 0.85rem; text-align: center;">
+                    Utolsó frissítés: 2025. január 1.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="kormyvill-logo.png" alt="KormyVill logó" class="footer-logo-img">
+                </div>
+                <p class="footer-text">&copy; 2025 KormyVill. Minden jog fenntartva.</p>
+                <div class="footer-links">
+                    <a href="adatvedelmi-nyilatkozat.html">Adatvédelem</a>
+                    <a href="index.html">Főoldal</a>
+                    <a href="mailto:info@kormyvill.hu">info@kormyvill.hu</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
